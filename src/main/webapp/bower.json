@@ -1,0 +1,24 @@
+{
+  "name": "webapp",
+  "version": "0.0.0",
+  "authors": [
+    "wuxudong"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "~1.2.24",
+    "angular-resource": "~1.2.23",
+    "angular-ui-codemirror": "bower",
+    "angularjs-scroll-glue": "~0.0.1",
+    "bootstrap": "^3.1.1",
+    "sockjs": "~0.3.4",
+    "stomp-websocket": "2.3.2"
+  }
+}
