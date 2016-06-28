@@ -5,6 +5,7 @@ import com.wupipi.coedit.model.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.simp.annotation.SubscribeMapping;
 import org.springframework.stereotype.Controller;
@@ -28,6 +29,12 @@ public class CoeditController {
 
     @Autowired
     private CoeditService coeditService;
+
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String index() {
+        return "redirect:default";
+    }
+
 
     @RequestMapping(value = "/{room}", method = RequestMethod.GET)
     public String room(@PathVariable String room) {
